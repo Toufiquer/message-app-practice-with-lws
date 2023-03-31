@@ -22,8 +22,13 @@ export const authApi = apiSlice.injectEndpoints({
           const result = await queryFulfilled;
           const data = {
             accessToken: result.data.accessToken,
-            user: result.data.user,
+            user: {
+              email: result.data.user.email,
+              id: result.data.user.id,
+              name: result.data.user.name,
+            },
           };
+          console.log(data, " => Line No: 56");
           saveToLocalStorage("auth", { ...data });
           dispatch(
             userLoggedIn({
@@ -44,8 +49,13 @@ export const authApi = apiSlice.injectEndpoints({
           const result = await queryFulfilled;
           const data = {
             accessToken: result.data.accessToken,
-            user: result.data.user,
+            user: {
+              email: result.data.user.email,
+              id: result.data.user.id,
+              name: result.data.user.name,
+            },
           };
+          console.log(data, " => Line No: 56");
           saveToLocalStorage("auth", { ...data });
           dispatch(
             userLoggedIn({

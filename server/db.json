@@ -25,6 +25,14 @@
       "confirmPassword": "1234",
       "agreed": true,
       "id": 4
+    },
+    {
+      "email": "test2@gmial.com",
+      "password": "$2a$10$QOz5vdwTKUXkbdeQdE8Pe.VGBSi39kRWUpSSwdQdG30ic4qzsIn4C",
+      "name": "test2",
+      "confirmPassword": "1234",
+      "agreed": true,
+      "id": 5
     }
   ],
   "conversations": [
