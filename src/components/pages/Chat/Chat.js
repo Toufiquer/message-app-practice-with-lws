@@ -8,11 +8,11 @@ const Chat = () => {
     <>
       <Nav />
 
-      <div class="max-w-7xl mx-auto -mt-1">
-        <div class="min-w-full border rounded flex lg:grid lg:grid-cols-3">
-          <div class="w-[100px] border-r border-t-0 border-gray-300 lg:col-span-1 md:w-full">
-            <div class="h-[65px] text-center text-grey-500 p-4 border-b border-gray-300 flex md:justify-end justify-center">
-              <svg viewBox="0 0 194.436 194.436" class="w-5 h-5 text-grey-500">
+      <div className="max-w-7xl mx-auto -mt-1">
+        <div className="min-w-full border rounded flex lg:grid lg:grid-cols-3">
+          <div className="w-[100px] border-r border-t-0 border-gray-300 lg:col-span-1 md:w-full">
+            <div className="h-[65px] text-center text-grey-500 p-4 border-b border-gray-300 flex md:justify-end justify-center">
+              <svg viewBox="0 0 194.436 194.436" className="w-5 h-5 text-grey-500">
                 <path
                   d="M192.238,34.545L159.894,2.197C158.487,0.79,156.579,0,154.59,0c-1.989,0-3.897,0.79-5.303,2.196l-32.35,32.35
                         c-0.004,0.004-0.008,0.01-0.013,0.014L54.876,96.608c-1.351,1.352-2.135,3.166-2.193,5.076l-1.015,33.361
@@ -30,8 +30,8 @@ const Chat = () => {
             </div>
             <Conversation />
           </div>
-          <div class="w-full lg:col-span-2 lg:block">
-            <div class="w-full grid conversation-row-grid">
+          <div className="w-full lg:col-span-2 lg:block">
+            <div className="w-full grid conversation-row-grid">
               {/* Outlet */}
               <Outlet />
             </div>
