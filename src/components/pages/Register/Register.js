@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import logoLight from "../../assets/lws-logo-light.svg";
-import { useRegisterMutation } from "../../redux/features/auth/authApi";
+import { useRegisterMutation } from "../../../redux/features/auth/authApi";
 const Register = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");

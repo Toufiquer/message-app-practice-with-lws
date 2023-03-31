@@ -2,7 +2,7 @@ import React from "react";
 import "./App.css";
 import { Route, Routes } from "react-router-dom";
 import LogIn from "./components/pages/LogIn/LogIn";
-import Register from "./components/Register/Register";
+import Register from "./components/pages/Register/Register";
 import Chat from "./components/pages/Chat/Chat";
 import Messages from "./components/Messages/Messages";
 import ChatIndex from "./components/Outlet/ChatIndex";
