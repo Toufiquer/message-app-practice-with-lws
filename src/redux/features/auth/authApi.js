@@ -65,7 +65,11 @@ export const authApi = apiSlice.injectEndpoints({
         } catch (error) {}
       },
     }),
+    isExist: builder.query({
+      query: (email) => `/users?email_like=${email}`,
+    }),
   }),
 });
 
-export const { useLoginMutation, useRegisterMutation } = authApi;
+export const { useLoginMutation, useRegisterMutation, useIsExistQuery } =
+  authApi;

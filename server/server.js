@@ -1,6 +1,6 @@
 const auth = require("json-server-auth");
 const jsonServer = require("json-server");
-// Create exress and http server
+// Create express and http server
 const express = require("express");
 const http = require("http");
 
@@ -28,16 +28,16 @@ router.render = (req, res) => {
   res.json(res.locals.data);
 };
 
-const middlewares = jsonServer.defaults();
+const middleware = jsonServer.defaults();
 const port = process.env.PORT || 9000;
 
 // Bind the router db to the app
 app.db = router.db;
 
-app.use(middlewares);
+app.use(middleware);
 
 const rules = auth.rewriter({
-  users: 640,
+  users: 660,
   conversations: 660,
   messages: 660,
 });
