@@ -4,7 +4,6 @@ import logoImg from "./../../assets/lws-logo-dark.svg";
 const Nav = () => {
   return (
     <>
-      {" "}
       <nav class="border-general sticky top-0 z-40 border-b bg-violet-700 transition-colors">
         <div class="max-w-7xl mx-auto">
           <div class="flex justify-between h-16 items-center">
@@ -16,7 +15,7 @@ const Nav = () => {
             </ul>
           </div>
         </div>
-      </nav> 
+      </nav>
     </>
   );
 };
