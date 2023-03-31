@@ -7,7 +7,7 @@ const http = require("http");
 // Create app server by using express
 const app = express();
 
-const server = http.create(app);
+const server = http.createServer(app);
 const io = require("socket.io")(server);
 global.io = io;
 
